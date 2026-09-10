@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * { box-sizing: border-box; }
+  body {
+    background-color: #F5F2EE;
+    color: #1C1917;
+    font-family: 'Outfit', 'Inter', system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-feature-settings: 'cv02', 'cv03', 'cv04', 'cv11';
+  }
+  ::-webkit-scrollbar { width: 4px; height: 4px; }
+  ::-webkit-scrollbar-track { background: #F0EDE9; }
+  ::-webkit-scrollbar-thumb { background: #D6D3D1; border-radius: 99px; }
+}
+
+@layer components {
+  /* ── Cards ── */
+  .card {
+    @apply bg-card border border-charcoal-200 rounded-xl shadow-card;
+  }
+  .card-dark {
+    @apply bg-card-dark border border-charcoal-800 rounded-xl;
+  }
+
+  /* ── Risk badges ── */
+  .badge-low      { @apply inline-flex items-center gap-1 px-2 py-0.5 rounded-md text-[10px] font-bold bg-risk-low-bg text-risk-low border border-risk-low/20; }
+  .badge-medium   { @apply inline-flex items-center gap-1 px-2 py-0.5 rounded-md text-[10px] font-bold bg-risk-medium-bg text-risk-medium border border-risk-medium/20; }
+  .badge-high     { @apply inline-flex items-center gap-1 px-2 py-0.5 rounded-md text-[10px] font-bold bg-risk-high-bg text-risk-high border border-risk-high/20; }
+  .badge-critical { @apply inline-flex items-center gap-1 px-2 py-0.5 rounded-md text-[10px] font-bold bg-risk-critical-bg text-risk-critical border border-risk-critical/20; }
+
+  /* ── Buttons ── */
+  .btn-primary   { @apply inline-flex items-center gap-2 px-4 py-2 bg-accent hover:bg-accent-hover text-white font-semibold rounded-lg transition-colors text-sm; }
+  .btn-secondary { @apply inline-flex items-center gap-2 px-4 py-2 bg-card border border-charcoal-200 hover:bg-charcoal-50 text-charcoal-800 font-semibold rounded-lg transition-colors text-sm; }
+  .btn-ghost     { @apply inline-flex items-center gap-2 px-3 py-1.5 hover:bg-charcoal-100 text-charcoal-600 font-medium rounded-lg transition-colors text-sm; }
+
+  /* ── Typography helpers ── */
+  .section-label { @apply text-[9px] font-bold uppercase tracking-[0.12em] text-charcoal-400; }
+  .card-title    { @apply text-[13px] font-bold text-charcoal-900 tracking-tight; }
+  .kpi-value     { @apply font-sans font-black tracking-tight leading-none text-charcoal-900; }
+  .kpi-label     { @apply text-[10px] font-semibold uppercase tracking-widest text-charcoal-400; }
+}
+
+/* KPI grid responsive breakpoints */
+@media (max-width: 1280px) {
+  .kpi-grid { grid-template-columns: repeat(3, 1fr) !important; }
+}
+@media (max-width: 768px) {
+  .kpi-grid { grid-template-columns: repeat(2, 1fr) !important; }
+}
