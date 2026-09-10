@@ -1,0 +1,48 @@
+route_id,stop_sequence,stop_id,stop_name
+R01,1,S01,CMBT
+R01,2,S02,Koyambedu
+R01,3,S03,Vadapalani
+R01,4,S04,Ashok Nagar
+R01,5,S05,T Nagar
+R01,6,S06,Saidapet
+R01,7,S07,Guindy
+R01,8,S08,Adyar
+R01,9,S09,Thiruvanmiyur
+R01,10,S10,Taramani
+R02,1,S11,Ambattur
+R02,2,S12,Mogappair
+R02,3,S13,Anna Nagar
+R02,4,S02,Koyambedu
+R02,5,S14,Kilpauk
+R02,6,S15,Egmore
+R02,7,S16,Central
+R02,8,S17,Parrys
+R02,9,S18,Marina Beach
+R03,1,S16,Central
+R03,2,S15,Egmore
+R03,3,S19,Nandanam
+R03,4,S06,Saidapet
+R03,5,S07,Guindy
+R03,6,S20,Velachery
+R03,7,S21,Perungudi
+R03,8,S22,Sholinganallur
+R03,9,S23,OMR
+R04,1,S24,Tambaram
+R04,2,S25,Chromepet
+R04,3,S26,Pallavaram
+R04,4,S07,Guindy
+R04,5,S06,Saidapet
+R04,6,S05,T Nagar
+R04,7,S03,Vadapalani
+R04,8,S28,Porur
+R04,9,S01,CMBT
+R05,1,S29,Avadi
+R05,2,S30,Thirumullaivoyal
+R05,3,S11,Ambattur
+R05,4,S31,Padi
+R05,5,S13,Anna Nagar
+R05,6,S02,Koyambedu
+R05,7,S03,Vadapalani
+R05,8,S04,Ashok Nagar
+R05,9,S07,Guindy
+R05,10,S20,Velachery
